@@ -1,0 +1,235 @@
+/* Global Syles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    background-color: #fafafa;
+}
+
+/* Element Styles */
+
+a.page-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    width: 100%;
+    margin: .5em auto 0;
+    display: inline-block;
+    padding: .5em;
+}
+
+a.page-link:hover {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 2em;
+    color: goldenrod;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+h2.footer-name {
+    text-transform: none;
+    float: left;
+    padding: .25em;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #fafafa;
+    display: none;
+}
+
+nav.narrow-nav {
+    float: right;
+}
+
+nav.wide-nav {
+    float: right;
+    display: none;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    width: 90%;
+    margin: 0 auto 1em;
+}
+
+/* Class Syles */
+
+.main-nav ul,
+.wide-nav ul {
+    list-style: inside none;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: .5em 0;
+}
+
+.wide-nav ul {
+    width: auto;
+}
+
+.wide-nav li {
+    display: inline-block;
+    padding: 0 .25em;
+}
+
+.profile-img {
+    width: 60%;
+    margin: 2em auto;
+}
+
+.module {
+    margin-top: 6em;
+    text-align: center;
+}
+
+.project-img {
+    width: 90%;
+    margin: 1em auto;
+}
+
+p.contact-info {
+    font-family: 'Sansita Swashed', cursive;
+}
+
+@media (min-width: 768px) {
+    body {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2.section-head {
+        font-size: 1.75em;
+    }
+
+    p {
+        width: 80%;
+    }
+
+    a.page-link:hover {
+        transform: scale(1.25);
+    }
+    
+        .main-nav li {
+        display: inline-block;
+        padding: 0 3%;
+    }
+
+    .profile {
+        display: inline;
+    }
+
+    .profile-text {
+        max-width: 55%;
+        margin-top: 2em;
+        margin-right: 1em;
+        text-align: left;
+        float: left;
+    }
+
+    .profile-img {
+        float: right;
+        max-width: 40%;
+    }
+
+    .project,
+    .skill {
+        width: 50%;
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+    .odd {
+        float: left;
+    }
+
+    .even {
+        float: right;
+    }
+
+    hr.two-column {
+        display: block;
+    }
+
+    hr.three-column {
+        display: none;
+    }
+
+    .contact-text {
+        margin: 3em auto;
+    }
+
+    nav.narrow-nav {
+        display: none;
+    }
+
+    nav.wide-nav {
+        display: inline-block;
+    }
+
+    footer {
+        margin: 3em auto;
+    }
+
+    h2.footer-name {
+        padding: .75em;
+    }
+
+    .clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (min-width: 1024px) {
+    .project, 
+    .skill {
+        width: 33%;
+        text-align: center;
+        display:inline-block;
+    }
+
+    .odd {
+        float: none;
+    }
+
+    .even {
+        float: none;
+    }
+
+    .left-side {
+        float: left;
+    }
+
+    .right-side {
+        float: right;
+    }
+
+    hr.two-column {
+        display: none;
+    }
+
+    hr.three-column {
+        display: block;
+    }
+
+}
